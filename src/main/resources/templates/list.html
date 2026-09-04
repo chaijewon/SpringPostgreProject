@@ -5,6 +5,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+  <ul>
+    <li th:each="vo:${list}">[[${vo.id}]]([[${vo.name}]])</li>
+  </ul>
 </body>
 </html>
