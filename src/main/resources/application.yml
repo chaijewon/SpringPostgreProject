@@ -1,0 +1,22 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /
+spring:
+  #mvc = 파일업로드 
+  datasource:
+      url: jdbc:postgresql://localhost:5432/recipe
+      username: postgres
+      password: 1234
+      driver-class-name: org.postgresql.Driver 
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+# mybatis 
+mybatis:
+  type-aliases-package: com.sist.web.vo
+  #mapper-locations: mybatis/mapper/*.xml
+ 
