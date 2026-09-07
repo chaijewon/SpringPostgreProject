@@ -10,4 +10,9 @@ public interface PostgresRecipeMapper {
         parameterType="com.sist.web.vo.RecipeVO">
     */
 	public void postgresRecipeInsert(RecipeVO vo);
+	/*
+	 *  <insert id="recipeVectorInsert" 
+	 *  parameterType="com.sist.web.vo.RecipeVectorVO">
+	 */
+	public void recipeVectorInsert(RecipeVectorVO vo);
 }

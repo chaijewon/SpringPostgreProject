@@ -7,5 +7,5 @@ import org.springframework.context.annotation.Configuration;
 @MapperScan( basePackages = "com.sist.web.mapper.oracle", 
           sqlSessionFactoryRef = "oracleSqlSessionFactory" )
 public class OracleMapperScanConfig {
-
+  
 }

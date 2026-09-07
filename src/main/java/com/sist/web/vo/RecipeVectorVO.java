@@ -48,5 +48,5 @@ public class RecipeVectorVO {
    private Long id;
    private Long recipe_id;
    private String content;
-   private float[] embedding;
+   private String embedding;
 }
