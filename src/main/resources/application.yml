@@ -7,12 +7,12 @@ spring:
   # 데이터베이스 설정 (다중 DB 바인딩용 커스텀 프로퍼티)
   datasource:
     postgres:
-      url: jdbc:postgresql://localhost:5432/recipe
+      jdbc-url: jdbc:postgresql://localhost:5432/recipe
       username: postgres
       password: "1234"
       driver-class-name: org.postgresql.Driver 
     oracle:
-      url: jdbc:oracle:thin:@211.238.142.45:1521:XE
+      jdbc-url: ${DB_URL}
       username: hr
       password: happy
       driver-class-name: oracle.jdbc.driver.OracleDriver
@@ -35,7 +35,7 @@ spring:
           project-id: gen-lang-client-0663941457
           text: 
             options:
-              model: gemini-embedding-004
+              model: gemini-embedding-001
               dimensions: 768
     model: 
       embedding:

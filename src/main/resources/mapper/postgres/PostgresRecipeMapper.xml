@@ -65,7 +65,7 @@
   
   <insert id="recipeVectorInsert" parameterType="com.sist.web.vo.RecipeVectorVO">
     INSERT INTO recipe_vector(recipe_id,content,embedding)
-    VALEUS(
+    VALUES(
       #{recipe_id},
       #{content},
       #{embedding}::vector

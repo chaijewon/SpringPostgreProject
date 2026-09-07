@@ -3,6 +3,7 @@ package com.sist.web.mapper.postgres;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 import com.sist.web.vo.*;
+// AI / Next 
 @Mapper
 public interface PostgresRecipeMapper {
    /*
