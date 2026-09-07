@@ -5,10 +5,16 @@ server:
 spring:
   #mvc = 파일업로드 
   datasource:
-      url: jdbc:postgresql://localhost:5432/recipe
+    postgres:
+      jdbc-url: jdbc:postgresql://localhost:5432/recipe
       username: postgres
       password: 1234
       driver-class-name: org.postgresql.Driver 
+    oracle:
+      jdbc-url: jdbc:oracle:thin:@211.238.142.45:1521:XE
+      username: hr
+      password: happy
+      driver-class-name: oracle.jdbc.driver.OracleDriver
   thymeleaf:
     cache: false
     encoding: UTF-8
@@ -18,5 +24,9 @@ spring:
 # mybatis 
 mybatis:
   type-aliases-package: com.sist.web.vo
-  #mapper-locations: mybatis/mapper/*.xml
+  mapper-locations: 
+   - classapth:/mapper/oracle/*.xml
+   - classpath:/mapper/postgres/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
  
