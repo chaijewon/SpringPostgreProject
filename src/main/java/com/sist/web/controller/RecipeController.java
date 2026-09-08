@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import com.sist.web.vo.*;
 @RestController
 @RequiredArgsConstructor
+
 public class RecipeController {
    
    private final RecipeService rs;
